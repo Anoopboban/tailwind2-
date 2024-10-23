@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textura</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "Roboto Mono", monospace;
+        }
+    </style>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Hero section with background -->
+    <div class="w-full md:h-screen h-96 bg-[url('https://t3.ftcdn.net/jpg/04/73/56/88/360_F_473568811_0R70C66lG6dpwxOrcxJrTRYeIOTnuSUK.jpg')] bg-no-repeat bg-cover">
+        <div class="w-full md:h-screen h-96" style="background-color: rgba(0, 0, 0, 0.362);">
+            <!-- Navigation bar -->
+            <nav class="w-full p-5 bg-green-900 flex justify-center items-center">
+                <ul class="text-white flex justify-evenly w-full">
+                    <li class="md:text-xl text-base hover:text-yellow-300 hover:cursor-pointer">Home</li>
+                    <li class="md:text-xl text-base hover:text-yellow-300 hover:cursor-pointer">About Us</li>
+                    <li class="md:text-xl text-base hover:text-yellow-300 hover:cursor-pointer">Products</li>
+                    <li class="md:text-xl text-base hover:text-yellow-300 hover:cursor-pointer">Fabric Guide</li>
+                    <li class="md:text-xl text-base hover:text-yellow-300 hover:cursor-pointer">Contact</li>
+                </ul>
+            </nav>
+
+            <!-- Home Section -->
+            <div class="w-full flex justify-center items-center flex-col md:pt-60 pt-20 ">
+                <h1 class="text-white md:text-9xl text-6xl">TEXTURA</h1>
+                <p class="text-white md:text-xl text-lg mt-3 p-4 text-center">Quality textiles for your style and comfort</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="w-full flex justify-center items-center flex-col">
+        <h1 class="md:text-4xl mt-20">FEATURED FABRICS</h1>
+        <div class="w-40 h-1 bg-green-950 mb-4"></div>
+
+        <div class="mt-20 md:px-40 md:grid grid-cols-3 w-full">
+            <div class="p-8">
+                <h2 class="text-2xl text-center mb-2">Premium Cotton</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtqOlIPHTPXOu-X-SSlQXvzEHnSgRm5y8qew&s" alt="Premium Cotton" class="w-full max-h-56">
+                <p class="text-center mt-4">Luxurious, soft, and breathable cotton perfect for all your clothing needs.</p>
+            </div>
+
+            <div class="p-8">
+                <h2 class="text-2xl text-center mb-2">Silk Textures</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEATu7z1Ak_VtQ-Gs2fNmWheWIBIEfAVJXQ&s" alt="Silk Textures" class="w-full max-h-56">
+                <p class="text-center mt-4">Rich silk fabric for elegant attire, available in vibrant colors.</p>
+            </div>
+
+            <div class="p-8">
+                <h2 class="text-2xl text-center mb-2">Linen Collection</h2>
+                <img src="https://img.freepik.com/free-photo/close-up-cozy-texture-detail_23-2149385275.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721779200&semt=ais_user" alt="Linen Collection" class="w-full max-h-56">
+                <p class="text-center mt-4">Perfect for summer wear, our breathable linen comes in a range of patterns.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="w-full bg-slate-300 my-20 md:grid grid-cols-2">
+        <div>
+            <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_851,h_451/https://www.orientbell.com/blog/wp-content/uploads/2024/04/850x450-Pix_5-2.jpg" class="w-full h-full" alt="Textura Textile Shop">
+        </div>
+        <div class="md:px-40 px-10">
+            <div class="flex justify-center items-center flex-col my-10">
+                <h1 class="text-4xl mt-10">OUR STORY</h1>
+                <div class="w-40 h-1 bg-green-500"></div>
+            </div>
+            <p class="text-justify">Textura has been providing quality fabrics since 1998. From classic cottons to modern blends, we source from
+                the best mills to offer an unparalleled selection. Our commitment to quality and customer service is what
+                keeps our customers coming back.</p>
+
+            <p class="mt-10 text-justify">Whether you’re looking for textiles to create a custom piece, or simply browsing for inspiration, our shop has something for everyone. Visit us to experience the finest fabrics from around the world.</p>
+        </div>
+    </div>
+
+    <!-- Product Categories -->
+    <div class="w-full">
+        <div class="flex justify-center items-center flex-col my-20">
+            <h1 class="text-4xl">FABRIC COLLECTION</h1>
+            <div class="w-32 h-1 bg-green-500 mb-4 mt-3"></div>
+        </div>
+
+        <div class="md:grid grid-cols-2 md:px-40 px-6">
+            <div class="flex justify-center items-center flex-col my-10 md:p-16 p-10">
+                <h1 class="text-4xl text-center">Cotton</h1>
+                <div class="w-52 h-1 bg-green-500 mb-4 mt-3"></div>
+                <p class="text-justify mt-2">Our cotton fabrics range from lightweight voile to sturdy denim, perfect for any project.</p>
+            </div>
+
+            <div class="flex justify-center items-center flex-col my-10 md:p-16 p-10">
+                <h1 class="text-4xl text-center">Silk</h1>
+                <div class="w-52 h-1 bg-green-500 mb-4 mt-3"></div>
+                <p class="text-justify mt-2">Elegant and luxurious, our silk collection is ideal for creating beautiful, flowing garments.</p>
+            </div>
+
+            <div class="flex justify-center items-center flex-col my-10 md:p-16 p-10">
+                <h1 class="text-4xl text-center">Linen</h1>
+                <div class="w-52 h-1 bg-green-500 mb-4 mt-3"></div>
+                <p class="text-justify mt-2">Cool and breathable, our linen fabrics are available in a variety of patterns and weights.</p>
+            </div>
+
+            <div class="flex justify-center items-center flex-col my-10 md:p-16 p-10">
+                <h1 class="text-4xl text-center">Wool</h1>
+                <div class="w-52 h-1 bg-green-500 mb-4 mt-3"></div>
+                <p class="text-justify mt-2">Warm and durable, our wool fabrics are perfect for coats, suits, and winter wear.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="md:grid grid-cols-4">
+        <div ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_tiID1ibnNhTMN6nEG0Fg96Ue3vT3hX4ELw&s" class="h-full w-full" alt="Textile 1"></div>
+        <div><img src="https://i.pinimg.com/236x/f1/8d/39/f18d392454b587f4246d7dc76bac61cd.jpg" class="h-full w-full" alt="Textile 2"></div>
+        <div><img src="https://media.istockphoto.com/id/1388131119/photo/female-customer-choosing-the-ball-of-wool-at-the-fabric-store-shop.jpg?s=612x612&w=0&k=20&c=MjQoJu8L-_ozhSwZq9cCZQYLP-P2jJK66Ff-nBykfQg=" class="h-full w-full" alt="Textile 3"></div>
+        <div><img src="https://images.pexels.com/photos/3965543/pexels-photo-3965543.jpeg?cs=srgb&dl=pexels-kseniachernaya-3965543.jpg&fm=jpg" class="h-full w-full" alt="Textile 4"></div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="bg-gray-800 py-16 px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
+            <div>
+                <h2 class="text-lg font-semibold">CUSTOM ORDERS</h2>
+                <div class="h-1 bg-green-500 w-20 mx-auto my-4"></div>
+                <p>Contact us at:</p>
+                <p class="mt-2">(123) 456-7890</p>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-semibold">STORE ADDRESS</h2>
+                <div class="h-1 bg-green-500 w-20 mx-auto my-4"></div>
+                <p>1234 Fabric St,</p>
+                <p>New York, NY 10001</p>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-semibold">WORKING HOURS</h2>
+                <div class="h-1 bg-green-500 w-20 mx-auto my-4"></div>
+                <p>Mon - Fri: 9am - 6pm</p>
+                <p>Sat: 10am - 5pm</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
